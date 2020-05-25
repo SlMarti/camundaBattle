@@ -54,3 +54,13 @@ http://localhost:8080/
 Полный перечень настроек application.yaml доступен по ссылке: https://docs.camunda.org/manual/latest/user-guide/spring-boot-integration/configuration/#camunda-engine-properties
 
 💪🏻 Поздравляем! Вы развернули процессное приложение Camunda!
+
+### Шаг 2: Внести изменения в описание процесса и реализовать Java Delegate
+
+Создать класс PrepareToBattle.java и модифицировать процесс следующим образом:
+![CamundaJavaDelegate](./pic/CamundaJavaDelegate.png)
+
+### Шаг 3: Добавить в описание процесса boundary error event и шлюз 
+
+Видеоматериал на YouTube: https://www.youtube.com/watch?v=BHxYtmJK6MQ
+ 
