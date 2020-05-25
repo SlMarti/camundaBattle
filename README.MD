@@ -62,5 +62,5 @@ http://localhost:8080/
 
 ### Шаг 3: Добавить в описание процесса boundary error event и шлюз 
 
-Видеоматериал на YouTube: https://www.youtube.com/watch?v=BHxYtmJK6MQ
+Пошаговое описание в видеоматериале на YouTube: https://www.youtube.com/watch?v=BHxYtmJK6MQ
  
