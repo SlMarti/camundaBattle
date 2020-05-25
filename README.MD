@@ -18,7 +18,7 @@
 
 ## Занятие 1: Печенеги vs Половцы
 
-![CamundaPubIntro](./img/CamundaPubIntro.png)
+![CamundaPubIntro](./pic/CamundaPubIntro.png)
 
 Цели:
 
