@@ -5,6 +5,10 @@ import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 @Component
 public class PrepareToBattle implements JavaDelegate {
     @Override
@@ -12,25 +16,15 @@ public class PrepareToBattle implements JavaDelegate {
 
         int warriors = (int) delegateExecution.getVariable("warriors");
         int enemyWarriors = (int) (Math.random() * 100);
-        String battleStatus = "Undefined";
-        boolean isWin = false;
-
-
+        System.out.println("Enemy warriors: " + enemyWarriors);
         if (warriors < 1 || warriors > 100) {
             throw new BpmnError("warriorsError");
         }
 
-        if ((warriors - enemyWarriors) > 0) {
-            isWin = true;
-            battleStatus = "Victory!";
-        } else {
-            battleStatus = "Fail! :( ";
-        }
+        List<Integer> army = new ArrayList<>(Collections.nCopies(warriors, 0));
 
-
+        delegateExecution.setVariable("army", army);
         delegateExecution.setVariable("enemyWarriors", enemyWarriors);
-        delegateExecution.setVariable("battleStatus", battleStatus);
-        delegateExecution.setVariable("isWin", isWin);
 
     }
 }
