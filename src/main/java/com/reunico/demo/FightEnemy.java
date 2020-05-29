@@ -15,14 +15,14 @@ public class FightEnemy implements JavaDelegate {
         ArrayList<Boolean> army = (ArrayList<Boolean>) delegateExecution.getVariable("army");
         int enemyWarriors = (int) delegateExecution.getVariable("enemyWarriors");
 
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         System.out.println("Fight! " + new Date());
         System.out.println(delegateExecution.getVariable("loopCounter"));
         if ( new Random().nextBoolean() ) {
             enemyWarriors--;
             System.out.println("Enemy warrior killed!");
         } else {
-            // army.remove(((ArrayList<Integer>) delegateExecution.getVariable("army")).size() - 1);
+            army.remove(((ArrayList<Boolean>) delegateExecution.getVariable("army")).size() - 1);
             System.out.println("Warriors killed!");
         }
         delegateExecution.setVariable("enemyWarriors", enemyWarriors);
