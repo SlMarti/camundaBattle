@@ -1,4 +1,5 @@
 spring.datasource.url: jdbc:h2:file:./camunda-h2-database
+url: https://demo.reunico.com/faker/api/generate?property=name.findName&property=name.title&property=random.number&locale=tr
 maxWarriors: 100
 camunda.bpm.admin-user:
   id: demo
