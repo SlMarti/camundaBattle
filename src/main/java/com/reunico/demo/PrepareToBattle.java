@@ -41,7 +41,7 @@ public class PrepareToBattle implements JavaDelegate {
 
         List<Warrior> army = new ArrayList<>();
 
-        for(int i = 0; i <= maxWarriors; i++) {
+        for(int i = 0; i <= warriors; i++) {
             army.add(create());
         }
 
